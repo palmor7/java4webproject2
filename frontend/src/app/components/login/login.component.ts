@@ -11,8 +11,6 @@ import { UserService } from "../../services/user.service";
 export class LoginComponent implements OnInit {
 user: user[] = [];
   constructor(private router: Router, private userService: UserService) { }
-	
-
 
 	login(loginForm){
 	let newUser: user= {
@@ -21,15 +19,16 @@ user: user[] = [];
     }
     
     console.log(newUser);
-    this.userService.register(newUser).subscribe((data)=>{
-      console.log("registered")
+    this.userService.login(newUser).subscribe((data)=>{
+      console.log("registered");
+
     },
     (error) => {
         console.log("error");
     });
     
     loginForm.reset();
-    this.router.navigate(['/home']);
+    this.router.navigate(['/userhomepage']);
 	} 
   
   ngOnInit() {
