@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login.component';
 import { FormsModule } from '@angular/forms';
+import { UserhomepageAuthService } from '../../services/userhomepage-auth.service';
 
 
 @NgModule({
@@ -12,7 +13,18 @@ import { FormsModule } from '@angular/forms';
     RouterModule.forChild([
 	    {
 	      path: '',
-	      component: LoginComponent
+        component: LoginComponent,
+        children: [{
+          path:'',
+          redirectTo: 'login',
+          pathMatch: 'full'
+        },
+        {
+          path: 'userhomepage',
+              loadChildren: './components/user-homepage/user-homepage.module#UserhomepageModule',
+              canActivate: [UserhomepageAuthService]
+        }
+        ]
 		  }])
   ],
   declarations: [LoginComponent]

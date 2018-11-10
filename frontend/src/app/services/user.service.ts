@@ -15,7 +15,7 @@ private baseUrl:string = 'http://localhost:8080';
  	localStorage.setItem('token', 'true');
  	let headers = new HttpHeaders();
     headers.append('Content-type', 'application/json');
-    return this.http.post(this.baseUrl +'/register', JSON.stringify(user),{headers});
+    return this.http.post(this.baseUrl +'/login', JSON.stringify(user),{headers});
  }
 
   register(user: user){
