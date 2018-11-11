@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { UserService } from './services/user.service';
 import { UserHomepageComponent } from './components/user-homepage/user-homepage.component';
 import { UserhomepageAuthService } from './services/userhomepage-auth.service';
+import { LoginpageAuthService } from './services/loginpage-auth.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UserhomepageAuthService } from './services/userhomepage-auth.service';
   ],
   providers: [
     UserService,
-    UserhomepageAuthService
+    UserhomepageAuthService,
+    LoginpageAuthService
   ],
   bootstrap: [AppComponent]
 })

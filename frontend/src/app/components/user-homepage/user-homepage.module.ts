@@ -6,10 +6,10 @@ import { RouterModule } from '@angular/router';
 @NgModule({
 	imports:[
 	CommonModule,
-		RouterModule.forChild([{
-		      path: '',
-		      component: UserHomepageComponent
-		}])
+	RouterModule.forChild([{
+		path: '',
+		component: UserHomepageComponent
+	}])
 	],
 	declarations:[
 		UserHomepageComponent
