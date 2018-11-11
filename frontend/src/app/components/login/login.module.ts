@@ -14,11 +14,7 @@ import { UserhomepageAuthService } from '../../services/userhomepage-auth.servic
 	    {
 	      path: '',
         component: LoginComponent,
-        children: [{
-          path:'',
-          redirectTo: 'login',
-          pathMatch: 'full'
-        },
+        children: [
         {
           path: 'userhomepage',
               loadChildren: './components/user-homepage/user-homepage.module#UserhomepageModule',
