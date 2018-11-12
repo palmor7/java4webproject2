@@ -1,4 +1,38 @@
+<nav class="navbar navbar-dark bg-info container-fluid">
+  <div class="row container-fluid">
+      <div class="col-sm-7 ">
+        <a class="navbar-brand">
+            <img src="../../../assets/images/efka_logo.jpg" width="200" height="90" alt="">
+        </a>
+      </div>
+      <div class="col-sm-3 ">
+        <span id="navtext" class="navbar-text">
+            Welcome to EFKA , Mr Premtsis
+        </span>
+      </div>
+      <div class="col-sm-2 ">
+        <span><button id="navbtn" type="submit" class="btn btn-info" (click)="logout()">Logout</button>
+        </span> 
+      </div>
+  </div> 
+</nav>
 <div class="container">
-	<p>HELLO Mr</p>
-	<button type="submit" class="btn btn-primary" (click)="logout()">Logout</button>
+   <img id="bodyimg" src="../../../assets/images/cover.jpg" class="img-fluid">
+</div>
+<div class="row container-fluid">
+    <div class="col-md-4 add">
+           <img id="icons" src="../../../assets/images/add.svg" class="img-fluid">
+           <br>
+           <button class="btn btn-info btn-lg">New Appointment</button>
+    </div>
+    <div class="col-md-4 search">
+           <img id="icons" src="../../../assets/images/search_icon.svg" class="img-fluid">
+           <br>
+           <button class="btn btn-info btn-lg">My Appointments</button>
+    </div>
+    <div class="col-md-4 edit">
+           <img id="icons" src="../../../assets/images/settings_icon.svg" class="img-fluid">
+           <br>
+           <button class="btn btn-info btn-lg">Edit Appointments</button>
+    </div>
 </div>
