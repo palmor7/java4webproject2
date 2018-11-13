@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule, ReactiveFormsModule, FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 import { user } from './models/userModel';
 import { from } from 'rxjs';
