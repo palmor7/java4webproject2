@@ -29,6 +29,11 @@ const routes: Routes = [
 	canActivate: [UserhomepageAuthService]
 	},
 	{
+		path: 'doctorhomepage',
+		loadChildren: './components/doctorhomepage/doctorhomepage.module#DoctorhomepageModule',
+		canActivate: [UserhomepageAuthService]
+	},
+	{
 		path: 'register',
         loadChildren: './components/register/register.module#RegisterModule',
 	},

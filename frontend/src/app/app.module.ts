@@ -6,17 +6,13 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { HomeComponent } from './components/home/home.component';
 import { UserService } from './services/user.service';
-import { UserHomepageComponent } from './components/user-homepage/user-homepage.component';
 import { UserhomepageAuthService } from './services/userhomepage-auth.service';
 import { LoginpageAuthService } from './services/loginpage-auth.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

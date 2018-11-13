@@ -26,8 +26,10 @@ user: user[] = [];
     (error) => {
         console.log("error");
     });
+    setTimeout(function() {
+      loginForm.reset();
+    }, 1000);
     
-    loginForm.reset();
     this.router.navigate(['/userhomepage']);
 	} 
   

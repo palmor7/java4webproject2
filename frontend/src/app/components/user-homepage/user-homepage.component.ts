@@ -71,7 +71,7 @@ selectedDoctorSpecialty(event:any){
     let newAppointment: Appointment= {
       doctorSpecialty: appointmentForm.value.doctorSpecialty,
       doctorName: appointmentForm.value.doctorName,
-      appointmentDate: appointmentForm.value.appointmentDate,
+      appointmentDate: appointmentForm.value.appointmentDate.toDateString(),
       appointmentTime: appointmentForm.value.appointmentTime.toTimeString(),
       description: appointmentForm.value.description,
       other: appointmentForm.value.remarks
